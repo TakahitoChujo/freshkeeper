@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D328A0762DD358AD88BA4DE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F785AB735C4637EF45DB96DE /* HomeView.swift */; };
+		6E1116ACB44C5D058F22E253 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A13820E203B855048F9534 /* NotificationsView.swift */; };
+		1B3F273F3112ABFD1235EDE4 /* StatisticsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3091EB7B8CFD6EEEB97A72 /* StatisticsViewModelTests.swift */; };
+		1EC33D54FA41CAAC50607DB6 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BA2ED094F66833D2CE1B5 /* StatisticsViewModel.swift */; };
+		33022F4EDA972C9FD3BE15AC /* FoodEmojiMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE5765C685468132D5BA3F /* FoodEmojiMapper.swift */; };
+		386610591012E1F58DF88418 /* DefaultPriceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EEF6E2339686C73A57A76E /* DefaultPriceProvider.swift */; };
+		3E9756FDFD27B8519C167E56 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746C6E02FBA4E1296FD82D3 /* NotificationService.swift */; };
+		3F63B7754A51EEA7E2C51DC7 /* ExpiryStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861C8B80BBA300B86D11635 /* ExpiryStatus.swift */; };
+		9AAE3CDE13E44B74983ECDE9 /* SampleDataModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0595DD760CD348848208C /* SampleDataModifier.swift */; };
+		42CA2B62A816B5FF6AED6E27 /* ConsumptionLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96039479A358EBD0C18639F6 /* ConsumptionLogTests.swift */; };
+		44C3B9E96A4E262C360999B1 /* FreshKeeperWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE7A5A9245EBF09FAB350A /* FreshKeeperWidgetBundle.swift */; };
+		4FBE4B48A4815EE85A751F44 /* BarcodeProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846256E2B70E8FB73BADEB7D /* BarcodeProduct.swift */; };
+		54D5634F83015EDA64162E6A /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8BF191DEF897952C1E123 /* CameraPreviewView.swift */; };
+		5AA3B2F857B657EFE97254DC /* FoodEmojiMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC072B58442DCF8B4B5A389 /* FoodEmojiMapperTests.swift */; };
+		68C299C0F78848B4EFA2FFD4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61565BD5C7DE577C86CB63B /* SettingsView.swift */; };
+		6F6496785DED8BA4F58C290B /* FoodItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB069963725EB09AAD9C85B8 /* FoodItemTests.swift */; };
+		757CE7D173826ED126F9B434 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8844BB4AE2C65A3FDA408419 /* FoodItem.swift */; };
+		85C5224284C1B6B676FB6E13 /* DateParsingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDF4A20BBDB0A6133E24E5 /* DateParsingService.swift */; };
+		8DB848790A7774CF200A57C9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC30800B69838B4411A7801 /* HomeViewModel.swift */; };
+		8E397DFC8EEE3E9FB463BC4C /* FreshKeeperWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F0AE21CE340896BCECC4B3DC /* FreshKeeperWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		905EA990E22DD76C06E17348 /* DateParsingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A86B05104339EB0A4B21F /* DateParsingServiceTests.swift */; };
+		94957A58901C80EBB712F7D4 /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC439981562D6FF4441FF592 /* ScanViewModel.swift */; };
+		9B24ED19A4AE284F9B5E44B9 /* FreshKeeperWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39915DFF346BB81EFF81EC1C /* FreshKeeperWidget.swift */; };
+		A8305C2A8FC46EAE39E2144D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FC1A41FD9052D9DFFDA0EB /* Assets.xcassets */; };
+		B1FB37FCEB232811FC8F5595 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA6FCC673B60DA740A09FE /* FoodDetailView.swift */; };
+		B9FEF837B43AFE7E12CC4BD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05951CAC50512FA11D2D6DA6 /* ContentView.swift */; };
+		BCB4F0355FF3F962CAD18165 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B1DA78D3F41CEA87C23EF28D /* Localizable.xcstrings */; };
+		BCB7430FCACCC36AD82A0FAE /* FoodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C01BA8103DDAD3DDDBAB0C /* FoodCardView.swift */; };
+		C8DFD55210A09A5CB734905D /* WidgetDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABD661CE7164EEF2301BFFE /* WidgetDataService.swift */; };
+		CB0C1CC588FAB4C7EC1C6B37 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D07C57C3D23740AC1D50FB /* HomeViewModelTests.swift */; };
+		D14F3E717943D442DF31F861 /* FreshKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC8C928186B6C2D8107828 /* FreshKeeperApp.swift */; };
+		D53F893C56934D712E242A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993F4367DBC8354A9E607C9C /* Assets.xcassets */; };
+		D65C6E6C4E75430EE1F3B0A3 /* ConsumptionLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA04C2067E7D3C9A6ED5434 /* ConsumptionLog.swift */; };
+		DDC427268D47531F1CF40AC0 /* FreshKeeperLockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CBA84D894BEA7A3C76E45A /* FreshKeeperLockScreenWidget.swift */; };
+		E083A39C9905B67F7DEC443A /* DefaultPriceProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA47DE9E29D60319E72DCC /* DefaultPriceProviderTests.swift */; };
+		E5BDCBBB431A9495789BF4C9 /* SavingsSummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2249A1F3150344805371A95 /* SavingsSummaryCard.swift */; };
+		E8B5A7AD35F4A2ADCD444563 /* FreshKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74B133A9358E088EC810B4 /* FreshKeeperUITests.swift */; };
+		F756F50B8F2D8923C9FAE700 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C39B77541C7C0EBCDED1BD /* StatisticsView.swift */; };
+		F89B2B2851B0F51B54CDEBAE /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0323071FFD700E4DDB2B697 /* ScanView.swift */; };
+		FE7EF03692B578DF7590B63D /* FilterChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE1E49250D591A17786F35C /* FilterChipView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08180F55958F4539B0F0E26D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 669C058001877073BC45DE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 114C9040675DEA772498F53D;
+			remoteInfo = FreshKeeper;
+		};
+		9C9FB43E8B200E5D566D4E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 669C058001877073BC45DE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85AF439D27B33082E97E4D78;
+			remoteInfo = FreshKeeperWidgetExtension;
+		};
+		E390307AD4DB0393EF6E6F1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 669C058001877073BC45DE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 114C9040675DEA772498F53D;
+			remoteInfo = FreshKeeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C41F3D17378708052F8A945 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8E397DFC8EEE3E9FB463BC4C /* FreshKeeperWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05951CAC50512FA11D2D6DA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0BC072B58442DCF8B4B5A389 /* FoodEmojiMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEmojiMapperTests.swift; sourceTree = "<group>"; };
+		15C01BA8103DDAD3DDDBAB0C /* FoodCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardView.swift; sourceTree = "<group>"; };
+		15FC1A41FD9052D9DFFDA0EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B74B133A9358E088EC810B4 /* FreshKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshKeeperUITests.swift; sourceTree = "<group>"; };
+		1EDC62B094BF647844CF25B7 /* FreshKeeperTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FreshKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		269BA2ED094F66833D2CE1B5 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		2FC9690BB7A7B8B60BCA0617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		39915DFF346BB81EFF81EC1C /* FreshKeeperWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshKeeperWidget.swift; sourceTree = "<group>"; };
+		49EEF6E2339686C73A57A76E /* DefaultPriceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPriceProvider.swift; sourceTree = "<group>"; };
+		4DC30800B69838B4411A7801 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		50CBA84D894BEA7A3C76E45A /* FreshKeeperLockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshKeeperLockScreenWidget.swift; sourceTree = "<group>"; };
+		5861C8B80BBA300B86D11635 /* ExpiryStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiryStatus.swift; sourceTree = "<group>"; };
+		C6C0595DD760CD348848208C /* SampleDataModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataModifier.swift; sourceTree = "<group>"; };
+		5ECE7A5A9245EBF09FAB350A /* FreshKeeperWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshKeeperWidgetBundle.swift; sourceTree = "<group>"; };
+		69C39B77541C7C0EBCDED1BD /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		6ABD661CE7164EEF2301BFFE /* WidgetDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataService.swift; sourceTree = "<group>"; };
+		6BFA6FCC673B60DA740A09FE /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		6EBE5765C685468132D5BA3F /* FoodEmojiMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEmojiMapper.swift; sourceTree = "<group>"; };
+		7746C6E02FBA4E1296FD82D3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		846256E2B70E8FB73BADEB7D /* BarcodeProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeProduct.swift; sourceTree = "<group>"; };
+		8844BB4AE2C65A3FDA408419 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		8AE1E49250D591A17786F35C /* FilterChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterChipView.swift; sourceTree = "<group>"; };
+		8FA04C2067E7D3C9A6ED5434 /* ConsumptionLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionLog.swift; sourceTree = "<group>"; };
+		96039479A358EBD0C18639F6 /* ConsumptionLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionLogTests.swift; sourceTree = "<group>"; };
+		993F4367DBC8354A9E607C9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5D07C57C3D23740AC1D50FB /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		A77E2F104E24A286551B8989 /* FreshKeeperUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FreshKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DA78D3F41CEA87C23EF28D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		C1DDF4A20BBDB0A6133E24E5 /* DateParsingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateParsingService.swift; sourceTree = "<group>"; };
+		C3F8BF191DEF897952C1E123 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		CC439981562D6FF4441FF592 /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
+		D3EC8C928186B6C2D8107828 /* FreshKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshKeeperApp.swift; sourceTree = "<group>"; };
+		DE3091EB7B8CFD6EEEB97A72 /* StatisticsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModelTests.swift; sourceTree = "<group>"; };
+		E0323071FFD700E4DDB2B697 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		E2249A1F3150344805371A95 /* SavingsSummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsSummaryCard.swift; sourceTree = "<group>"; };
+		EB069963725EB09AAD9C85B8 /* FoodItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTests.swift; sourceTree = "<group>"; };
+		F0AE21CE340896BCECC4B3DC /* FreshKeeperWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = FreshKeeperWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61565BD5C7DE577C86CB63B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F785AB735C4637EF45DB96DE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F2A13820E203B855048F9534 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		F87A86B05104339EB0A4B21F /* DateParsingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateParsingServiceTests.swift; sourceTree = "<group>"; };
+		F98F3AAEF703EE0F861B46E7 /* FreshKeeper.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FreshKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA47DE9E29D60319E72DCC /* DefaultPriceProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPriceProviderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		04B58A9C2603803B0D21C6B2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7746C6E02FBA4E1296FD82D3 /* NotificationService.swift */,
+				6ABD661CE7164EEF2301BFFE /* WidgetDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0977475E4FDC59D65403E7B7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8AE1E49250D591A17786F35C /* FilterChipView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0A082906E21E511847E7735A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6BFA6FCC673B60DA740A09FE /* FoodDetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		234638CEF123840DCCB9904E /* FreshKeeperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B74B133A9358E088EC810B4 /* FreshKeeperUITests.swift */,
+			);
+			path = FreshKeeperUITests;
+			sourceTree = "<group>";
+		};
+		5016458FCD3C56C181A47C4F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C1DDF4A20BBDB0A6133E24E5 /* DateParsingService.swift */,
+				49EEF6E2339686C73A57A76E /* DefaultPriceProvider.swift */,
+				5861C8B80BBA300B86D11635 /* ExpiryStatus.swift */,
+				C6C0595DD760CD348848208C /* SampleDataModifier.swift */,
+				6EBE5765C685468132D5BA3F /* FoodEmojiMapper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		51B58443DE4B6C1B5F725AB8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F61565BD5C7DE577C86CB63B /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		5EAD2ECDA82BC918BD2B48E0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				15C01BA8103DDAD3DDDBAB0C /* FoodCardView.swift */,
+				F785AB735C4637EF45DB96DE /* HomeView.swift */,
+				F2A13820E203B855048F9534 /* NotificationsView.swift */,
+				E2249A1F3150344805371A95 /* SavingsSummaryCard.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		652EE22F9C81FB0C6B77CA65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0977475E4FDC59D65403E7B7 /* Components */,
+				0A082906E21E511847E7735A /* Detail */,
+				5EAD2ECDA82BC918BD2B48E0 /* Home */,
+				69BED9FCDDBF74DE35176523 /* Scan */,
+				51B58443DE4B6C1B5F725AB8 /* Settings */,
+				89F29363EAAFF8CB6F794057 /* Statistics */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69BED9FCDDBF74DE35176523 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				C3F8BF191DEF897952C1E123 /* CameraPreviewView.swift */,
+				E0323071FFD700E4DDB2B697 /* ScanView.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		7B4122A62EA9A4F0A7F3496E /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				96039479A358EBD0C18639F6 /* ConsumptionLogTests.swift */,
+				EB069963725EB09AAD9C85B8 /* FoodItemTests.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		89F29363EAAFF8CB6F794057 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				69C39B77541C7C0EBCDED1BD /* StatisticsView.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		970F2B01ABB726FE6B0F69C1 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				F87A86B05104339EB0A4B21F /* DateParsingServiceTests.swift */,
+				FAEA47DE9E29D60319E72DCC /* DefaultPriceProviderTests.swift */,
+				0BC072B58442DCF8B4B5A389 /* FoodEmojiMapperTests.swift */,
+			);
+			path = ServiceTests;
+			sourceTree = "<group>";
+		};
+		A81B9214E6FE9B2AEA6EB750 /* FreshKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				05951CAC50512FA11D2D6DA6 /* ContentView.swift */,
+				D3EC8C928186B6C2D8107828 /* FreshKeeperApp.swift */,
+				AC8B393D397F8F5E95225C22 /* Models */,
+				F97D940EF8146ADD0A2C3A7D /* Resources */,
+				04B58A9C2603803B0D21C6B2 /* Services */,
+				5016458FCD3C56C181A47C4F /* Utilities */,
+				DEEDEA5D7444EB45EE9DD015 /* ViewModels */,
+				652EE22F9C81FB0C6B77CA65 /* Views */,
+			);
+			path = FreshKeeper;
+			sourceTree = "<group>";
+		};
+		AC8B393D397F8F5E95225C22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				846256E2B70E8FB73BADEB7D /* BarcodeProduct.swift */,
+				8FA04C2067E7D3C9A6ED5434 /* ConsumptionLog.swift */,
+				8844BB4AE2C65A3FDA408419 /* FoodItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2230389F8B2D4CC4EB3924D /* FreshKeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B4122A62EA9A4F0A7F3496E /* ModelTests */,
+				970F2B01ABB726FE6B0F69C1 /* ServiceTests */,
+				E632F436FA70E462B6398162 /* ViewModelTests */,
+			);
+			path = FreshKeeperTests;
+			sourceTree = "<group>";
+		};
+		B40D33A4032AFF818DB7F871 = {
+			isa = PBXGroup;
+			children = (
+				A81B9214E6FE9B2AEA6EB750 /* FreshKeeper */,
+				B2230389F8B2D4CC4EB3924D /* FreshKeeperTests */,
+				234638CEF123840DCCB9904E /* FreshKeeperUITests */,
+				DB9F5BB8CFD2C3AC317242B1 /* FreshKeeperWidget */,
+				BB045869EA0CD3D09DD9FC18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB045869EA0CD3D09DD9FC18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F98F3AAEF703EE0F861B46E7 /* FreshKeeper.app */,
+				1EDC62B094BF647844CF25B7 /* FreshKeeperTests.xctest */,
+				A77E2F104E24A286551B8989 /* FreshKeeperUITests.xctest */,
+				F0AE21CE340896BCECC4B3DC /* FreshKeeperWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB9F5BB8CFD2C3AC317242B1 /* FreshKeeperWidget */ = {
+			isa = PBXGroup;
+			children = (
+				993F4367DBC8354A9E607C9C /* Assets.xcassets */,
+				50CBA84D894BEA7A3C76E45A /* FreshKeeperLockScreenWidget.swift */,
+				39915DFF346BB81EFF81EC1C /* FreshKeeperWidget.swift */,
+				5ECE7A5A9245EBF09FAB350A /* FreshKeeperWidgetBundle.swift */,
+				2FC9690BB7A7B8B60BCA0617 /* Info.plist */,
+			);
+			path = FreshKeeperWidget;
+			sourceTree = "<group>";
+		};
+		DEEDEA5D7444EB45EE9DD015 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4DC30800B69838B4411A7801 /* HomeViewModel.swift */,
+				CC439981562D6FF4441FF592 /* ScanViewModel.swift */,
+				269BA2ED094F66833D2CE1B5 /* StatisticsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E632F436FA70E462B6398162 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5D07C57C3D23740AC1D50FB /* HomeViewModelTests.swift */,
+				DE3091EB7B8CFD6EEEB97A72 /* StatisticsViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		F97D940EF8146ADD0A2C3A7D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15FC1A41FD9052D9DFFDA0EB /* Assets.xcassets */,
+				B1DA78D3F41CEA87C23EF28D /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05F12862002618A4E712CE3E /* FreshKeeperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BBDF5686471668AD6F9D47 /* Build configuration list for PBXNativeTarget "FreshKeeperUITests" */;
+			buildPhases = (
+				2969331434EF131810686D60 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA4485D2AFECB2338AE3D42B /* PBXTargetDependency */,
+			);
+			name = FreshKeeperUITests;
+			packageProductDependencies = (
+			);
+			productName = FreshKeeperUITests;
+			productReference = A77E2F104E24A286551B8989 /* FreshKeeperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		114C9040675DEA772498F53D /* FreshKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F9EC5762DC23AFBB456C5A /* Build configuration list for PBXNativeTarget "FreshKeeper" */;
+			buildPhases = (
+				9D47A5672CAD3305AABD30CB /* Sources */,
+				4C6314C3E179E5EEE6BA4983 /* Resources */,
+				3C41F3D17378708052F8A945 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DDEDBCE6414BAF42F6226C6 /* PBXTargetDependency */,
+			);
+			name = FreshKeeper;
+			packageProductDependencies = (
+			);
+			productName = FreshKeeper;
+			productReference = F98F3AAEF703EE0F861B46E7 /* FreshKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85AF439D27B33082E97E4D78 /* FreshKeeperWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59E4342147EBAA5B0508A351 /* Build configuration list for PBXNativeTarget "FreshKeeperWidgetExtension" */;
+			buildPhases = (
+				93A579F3BF5F57141103B7CA /* Sources */,
+				1A0A47C8CE6826734125232D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreshKeeperWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = FreshKeeperWidgetExtension;
+			productReference = F0AE21CE340896BCECC4B3DC /* FreshKeeperWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AE319FEDB029AEA10B9D7557 /* FreshKeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B798DEA2272B599357EA86DB /* Build configuration list for PBXNativeTarget "FreshKeeperTests" */;
+			buildPhases = (
+				85EA856E9A0B53905023F3A8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFE33474775646E0AD37CE1D /* PBXTargetDependency */,
+			);
+			name = FreshKeeperTests;
+			packageProductDependencies = (
+			);
+			productName = FreshKeeperTests;
+			productReference = 1EDC62B094BF647844CF25B7 /* FreshKeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		669C058001877073BC45DE8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					05F12862002618A4E712CE3E = {
+						DevelopmentTeam = "";
+						TestTargetID = 114C9040675DEA772498F53D;
+					};
+					114C9040675DEA772498F53D = {
+						DevelopmentTeam = "";
+					};
+					85AF439D27B33082E97E4D78 = {
+						DevelopmentTeam = "";
+					};
+					AE319FEDB029AEA10B9D7557 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 66160985FE9BBCE955942FFD /* Build configuration list for PBXProject "FreshKeeper" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ja,
+			);
+			mainGroup = B40D33A4032AFF818DB7F871;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BB045869EA0CD3D09DD9FC18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				114C9040675DEA772498F53D /* FreshKeeper */,
+				AE319FEDB029AEA10B9D7557 /* FreshKeeperTests */,
+				05F12862002618A4E712CE3E /* FreshKeeperUITests */,
+				85AF439D27B33082E97E4D78 /* FreshKeeperWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0A47C8CE6826734125232D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53F893C56934D712E242A3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C6314C3E179E5EEE6BA4983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8305C2A8FC46EAE39E2144D /* Assets.xcassets in Resources */,
+				BCB4F0355FF3F962CAD18165 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2969331434EF131810686D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B5A7AD35F4A2ADCD444563 /* FreshKeeperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85EA856E9A0B53905023F3A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CA2B62A816B5FF6AED6E27 /* ConsumptionLogTests.swift in Sources */,
+				905EA990E22DD76C06E17348 /* DateParsingServiceTests.swift in Sources */,
+				E083A39C9905B67F7DEC443A /* DefaultPriceProviderTests.swift in Sources */,
+				5AA3B2F857B657EFE97254DC /* FoodEmojiMapperTests.swift in Sources */,
+				6F6496785DED8BA4F58C290B /* FoodItemTests.swift in Sources */,
+				CB0C1CC588FAB4C7EC1C6B37 /* HomeViewModelTests.swift in Sources */,
+				1B3F273F3112ABFD1235EDE4 /* StatisticsViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A579F3BF5F57141103B7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC427268D47531F1CF40AC0 /* FreshKeeperLockScreenWidget.swift in Sources */,
+				9B24ED19A4AE284F9B5E44B9 /* FreshKeeperWidget.swift in Sources */,
+				44C3B9E96A4E262C360999B1 /* FreshKeeperWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D47A5672CAD3305AABD30CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBE4B48A4815EE85A751F44 /* BarcodeProduct.swift in Sources */,
+				54D5634F83015EDA64162E6A /* CameraPreviewView.swift in Sources */,
+				D65C6E6C4E75430EE1F3B0A3 /* ConsumptionLog.swift in Sources */,
+				B9FEF837B43AFE7E12CC4BD6 /* ContentView.swift in Sources */,
+				85C5224284C1B6B676FB6E13 /* DateParsingService.swift in Sources */,
+				386610591012E1F58DF88418 /* DefaultPriceProvider.swift in Sources */,
+				3F63B7754A51EEA7E2C51DC7 /* ExpiryStatus.swift in Sources */,
+				9AAE3CDE13E44B74983ECDE9 /* SampleDataModifier.swift in Sources */,
+				FE7EF03692B578DF7590B63D /* FilterChipView.swift in Sources */,
+				BCB7430FCACCC36AD82A0FAE /* FoodCardView.swift in Sources */,
+				B1FB37FCEB232811FC8F5595 /* FoodDetailView.swift in Sources */,
+				33022F4EDA972C9FD3BE15AC /* FoodEmojiMapper.swift in Sources */,
+				757CE7D173826ED126F9B434 /* FoodItem.swift in Sources */,
+				D14F3E717943D442DF31F861 /* FreshKeeperApp.swift in Sources */,
+				0D328A0762DD358AD88BA4DE /* HomeView.swift in Sources */,
+				6E1116ACB44C5D058F22E253 /* NotificationsView.swift in Sources */,
+				8DB848790A7774CF200A57C9 /* HomeViewModel.swift in Sources */,
+				3E9756FDFD27B8519C167E56 /* NotificationService.swift in Sources */,
+				E5BDCBBB431A9495789BF4C9 /* SavingsSummaryCard.swift in Sources */,
+				F89B2B2851B0F51B54CDEBAE /* ScanView.swift in Sources */,
+				94957A58901C80EBB712F7D4 /* ScanViewModel.swift in Sources */,
+				68C299C0F78848B4EFA2FFD4 /* SettingsView.swift in Sources */,
+				F756F50B8F2D8923C9FAE700 /* StatisticsView.swift in Sources */,
+				1EC33D54FA41CAAC50607DB6 /* StatisticsViewModel.swift in Sources */,
+				C8DFD55210A09A5CB734905D /* WidgetDataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DDEDBCE6414BAF42F6226C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85AF439D27B33082E97E4D78 /* FreshKeeperWidgetExtension */;
+			targetProxy = 9C9FB43E8B200E5D566D4E58 /* PBXContainerItemProxy */;
+		};
+		CFE33474775646E0AD37CE1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 114C9040675DEA772498F53D /* FreshKeeper */;
+			targetProxy = E390307AD4DB0393EF6E6F1A /* PBXContainerItemProxy */;
+		};
+		EA4485D2AFECB2338AE3D42B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 114C9040675DEA772498F53D /* FreshKeeper */;
+			targetProxy = 08180F55958F4539B0F0E26D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D6077B43662371C8103CC8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FreshKeeper;
+				INFOPLIST_KEY_NSCameraUsageDescription = "食品のバーコードと賞味期限をスキャンするためにカメラを使用します";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeper;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78BF0DAC8C5B0C0099CDEC25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FreshKeeperWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FreshKeeperWidget;
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeper.Widget;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F66C64928AF4F51B5FE611A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeperTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshKeeper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreshKeeper";
+			};
+			name = Debug;
+		};
+		823B63ED19977BECE9A38A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeperUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FreshKeeper;
+			};
+			name = Release;
+		};
+		8C5A22893FC09CA013AD26E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A3D8C7B4CA6F64BE73D2235C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeperTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshKeeper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreshKeeper";
+			};
+			name = Release;
+		};
+		B2C34E4114F5B5879C65A90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		BD0CAB40350BC30829DBF54B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeperUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FreshKeeper;
+			};
+			name = Debug;
+		};
+		D4F155CC48AA2A3A1E98F69A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FreshKeeperWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FreshKeeperWidget;
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeper.Widget;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9E8D658322F866C64E32FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FreshKeeper;
+				INFOPLIST_KEY_NSCameraUsageDescription = "食品のバーコードと賞味期限をスキャンするためにカメラを使用します";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeper;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59E4342147EBAA5B0508A351 /* Build configuration list for PBXNativeTarget "FreshKeeperWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78BF0DAC8C5B0C0099CDEC25 /* Debug */,
+				D4F155CC48AA2A3A1E98F69A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		66160985FE9BBCE955942FFD /* Build configuration list for PBXProject "FreshKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2C34E4114F5B5879C65A90F /* Debug */,
+				8C5A22893FC09CA013AD26E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B798DEA2272B599357EA86DB /* Build configuration list for PBXNativeTarget "FreshKeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F66C64928AF4F51B5FE611A /* Debug */,
+				A3D8C7B4CA6F64BE73D2235C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D2F9EC5762DC23AFBB456C5A /* Build configuration list for PBXNativeTarget "FreshKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6077B43662371C8103CC8F /* Debug */,
+				E9E8D658322F866C64E32FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9BBDF5686471668AD6F9D47 /* Build configuration list for PBXNativeTarget "FreshKeeperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0CAB40350BC30829DBF54B /* Debug */,
+				823B63ED19977BECE9A38A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 669C058001877073BC45DE8A /* Project object */;
+}

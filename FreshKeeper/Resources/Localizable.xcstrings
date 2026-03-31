@@ -1,0 +1,462 @@
+{
+  "sourceLanguage" : "ja",
+  "strings" : {
+    "tab.home" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ホーム" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } }
+      }
+    },
+    "tab.scan" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "スキャン" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan" } }
+      }
+    },
+    "tab.statistics" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "統計" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Statistics" } }
+      }
+    },
+    "home.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "FreshKeeper" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "FreshKeeper" } }
+      }
+    },
+    "home.empty.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "食品が登録されていません" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No food items registered" } }
+      }
+    },
+    "home.empty.description" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "スキャンタブから食品を登録しましょう" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Register food items from the Scan tab" } }
+      }
+    },
+    "storage.refrigerator" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "冷蔵庫" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Fridge" } }
+      }
+    },
+    "storage.freezer" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "冷凍庫" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Freezer" } }
+      }
+    },
+    "storage.other" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "その他" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Other" } }
+      }
+    },
+    "filter.all" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "すべて" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "All" } }
+      }
+    },
+    "expiry.expired" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "期限切れ" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Expired" } }
+      }
+    },
+    "expiry.urgent" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "期限切れ間近" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Expiring soon" } }
+      }
+    },
+    "expiry.warning" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "もうすぐ" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Coming up" } }
+      }
+    },
+    "expiry.safe" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "余裕あり" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Safe" } }
+      }
+    },
+    "expiry.today" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日まで" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Today" } }
+      }
+    },
+    "expiry.days_over %lld" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "%lld日超過" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld days over" } }
+      }
+    },
+    "expiry.days_left %lld" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "残り%lld日" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld days left" } }
+      }
+    },
+    "action.consume" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "使い切った" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Consumed" } }
+      }
+    },
+    "action.discard" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "捨てた" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Discarded" } }
+      }
+    },
+    "action.back" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "戻る" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Back" } }
+      }
+    },
+    "action.done" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "完了" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Done" } }
+      }
+    },
+    "action.delete" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "削除" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete" } }
+      }
+    },
+    "action.cancel" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "キャンセル" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cancel" } }
+      }
+    },
+    "savings.monthly" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今月の節約額" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Monthly savings" } }
+      }
+    },
+    "savings.diff %@" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "先月比 ¥%@" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "vs last month ¥%@" } }
+      }
+    },
+    "scan.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "スキャン" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan" } }
+      }
+    },
+    "scan.result" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "読み取り結果" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan Result" } }
+      }
+    },
+    "scan.product_name" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "商品名" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Product Name" } }
+      }
+    },
+    "scan.product_name.placeholder" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "商品名を入力" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Enter product name" } }
+      }
+    },
+    "scan.expiry_date" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "賞味期限" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Expiry Date" } }
+      }
+    },
+    "scan.date_detected" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "日付検出" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Date Detected" } }
+      }
+    },
+    "scan.storage" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "保管場所" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Storage" } }
+      }
+    },
+    "scan.quantity" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "個数" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Quantity" } }
+      }
+    },
+    "scan.register" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "登録する" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Register" } }
+      }
+    },
+    "scan.continuous" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "続けてスキャン" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Continuous scan" } }
+      }
+    },
+    "statistics.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "統計" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Statistics" } }
+      }
+    },
+    "statistics.monthly_savings" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今月の節約額" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Monthly Savings" } }
+      }
+    },
+    "statistics.monthly_summary" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今月のサマリー" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Monthly Summary" } }
+      }
+    },
+    "statistics.consumed" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "使い切り" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Consumed" } }
+      }
+    },
+    "statistics.discarded" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "廃棄" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Discarded" } }
+      }
+    },
+    "statistics.consumption_rate" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "使い切り率" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Consumption Rate" } }
+      }
+    },
+    "statistics.cumulative" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "累計" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cumulative" } }
+      }
+    },
+    "statistics.total_savings" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "総節約額" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Total Savings" } }
+      }
+    },
+    "statistics.total_registered" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "登録食品" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Registered Items" } }
+      }
+    },
+    "statistics.overall_rate" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通算使い切り率" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Overall Rate" } }
+      }
+    },
+    "unit.items" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "個" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : " items" } }
+      }
+    },
+    "detail.name" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "商品名" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Product Name" } }
+      }
+    },
+    "detail.info" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "情報" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Info" } }
+      }
+    },
+    "detail.expiry_date" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "賞味期限" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Expiry Date" } }
+      }
+    },
+    "detail.days_remaining" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "残り日数" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Days Remaining" } }
+      }
+    },
+    "detail.storage" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "保管場所" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Storage" } }
+      }
+    },
+    "detail.quantity %lld" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "個数: %lld" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Quantity: %lld" } }
+      }
+    },
+    "detail.barcode" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "バーコード" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Barcode" } }
+      }
+    },
+    "detail.registered" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "登録日" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Registered" } }
+      }
+    },
+    "detail.delete_confirm" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "この食品を削除しますか？" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete this item?" } }
+      }
+    },
+    "settings.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "設定" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } }
+      }
+    },
+    "settings.notifications" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notifications" } }
+      }
+    },
+    "settings.notify_before" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知タイミング" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notify before" } }
+      }
+    },
+    "settings.days_before %lld" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "%lld日前" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld days before" } }
+      }
+    },
+    "settings.notify_time" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知時刻" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notification time" } }
+      }
+    },
+    "settings.sync" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "同期" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sync" } }
+      }
+    },
+    "settings.icloud_sync" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "iCloud同期" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "iCloud Sync" } }
+      }
+    },
+    "settings.data" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "データ" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Data" } }
+      }
+    },
+    "settings.export" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "データのエクスポート" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Export Data" } }
+      }
+    },
+    "settings.about" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "アプリについて" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "About" } }
+      }
+    },
+    "settings.version" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "バージョン" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Version" } }
+      }
+    },
+    "settings.feedback" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "フィードバック送信" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Send Feedback" } }
+      }
+    },
+    "notifications.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notifications" } }
+      }
+    },
+    "notifications.empty.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知はありません" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No notifications" } }
+      }
+    },
+    "notifications.empty.description" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "期限切れや期限間近の食品はありません" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No expired or expiring items" } }
+      }
+    },
+    "notification.expiring_soon.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "賞味期限が近づいています" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Expiry date approaching" } }
+      }
+    },
+    "notification.expiring_soon.body.generic %lld" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "賞味期限が%lld日後の食品があります。アプリで確認しましょう" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "You have food expiring in %lld days. Check the app for details" } }
+      }
+    },
+    "notification.today.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "賞味期限は今日です" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Expiry date is today" } }
+      }
+    },
+    "notification.today.body.generic" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日が賞味期限の食品があります。使い切りましょう！" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "You have food expiring today. Use it before it goes to waste!" } }
+      }
+    },
+    "notification.expired.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "賞味期限が過ぎました" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Item has expired" } }
+      }
+    },
+    "notification.expired.body.generic" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "賞味期限が過ぎた食品があります。使い切りましたか？" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "You have expired food. Did you use it?" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}
