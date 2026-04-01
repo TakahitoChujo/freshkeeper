@@ -106,5 +106,13 @@ struct FoodCardView: View {
         .onTapGesture {
             showingDetail = true
         }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("\(item.name), \(item.storageLocation.displayName), \(item.expiryStatus.remainingText(item.daysUntilExpiry)), \(item.expiryStatus.label)")
+        .accessibilityAction(named: String(localized: "action.consume")) {
+            onConsume()
+        }
+        .accessibilityAction(named: String(localized: "action.discard")) {
+            onDiscard()
+        }
     }
 }

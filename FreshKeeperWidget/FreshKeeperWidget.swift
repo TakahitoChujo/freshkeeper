@@ -20,7 +20,7 @@ struct WidgetData: Codable {
 
     /// Reads shared data from App Group UserDefaults
     static func load() -> WidgetData {
-        guard let defaults = UserDefaults(suiteName: "group.com.freshkeeper.shared"),
+        guard let defaults = UserDefaults(suiteName: "group.com.jyojorian.freshkeeper"),
               let data = defaults.data(forKey: "widgetData"),
               let decoded = try? JSONDecoder().decode(WidgetData.self, from: data) else {
             return .empty
@@ -30,7 +30,7 @@ struct WidgetData: Codable {
 
     /// Writes shared data from the main app
     static func save(_ data: WidgetData) {
-        guard let defaults = UserDefaults(suiteName: "group.com.freshkeeper.shared"),
+        guard let defaults = UserDefaults(suiteName: "group.com.jyojorian.freshkeeper"),
               let encoded = try? JSONEncoder().encode(data) else { return }
         defaults.set(encoded, forKey: "widgetData")
     }

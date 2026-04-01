@@ -58,7 +58,7 @@ struct WidgetData: Codable {
     static let empty = WidgetData(items: [], monthlySavings: 0)
 
     static func load() -> WidgetData {
-        guard let defaults = UserDefaults(suiteName: "group.com.freshkeeper.shared"),
+        guard let defaults = UserDefaults(suiteName: "group.com.jyojorian.freshkeeper"),
               let data = defaults.data(forKey: "widgetData"),
               let decoded = try? JSONDecoder().decode(WidgetData.self, from: data) else {
             return .empty
@@ -67,7 +67,7 @@ struct WidgetData: Codable {
     }
 
     static func save(_ data: WidgetData) {
-        guard let defaults = UserDefaults(suiteName: "group.com.freshkeeper.shared"),
+        guard let defaults = UserDefaults(suiteName: "group.com.jyojorian.freshkeeper"),
               let encoded = try? JSONEncoder().encode(data) else { return }
         defaults.set(encoded, forKey: "widgetData")
     }

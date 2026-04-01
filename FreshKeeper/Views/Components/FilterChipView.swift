@@ -16,5 +16,6 @@ struct FilterChipView: View {
                 .foregroundStyle(isSelected ? .white : .primary)
                 .clipShape(Capsule())
         }
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 }

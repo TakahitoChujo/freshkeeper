@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0D328A0762DD358AD88BA4DE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F785AB735C4637EF45DB96DE /* HomeView.swift */; };
-		6E1116ACB44C5D058F22E253 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A13820E203B855048F9534 /* NotificationsView.swift */; };
 		1B3F273F3112ABFD1235EDE4 /* StatisticsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3091EB7B8CFD6EEEB97A72 /* StatisticsViewModelTests.swift */; };
 		1EC33D54FA41CAAC50607DB6 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BA2ED094F66833D2CE1B5 /* StatisticsViewModel.swift */; };
 		33022F4EDA972C9FD3BE15AC /* FoodEmojiMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE5765C685468132D5BA3F /* FoodEmojiMapper.swift */; };
 		386610591012E1F58DF88418 /* DefaultPriceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EEF6E2339686C73A57A76E /* DefaultPriceProvider.swift */; };
 		3E9756FDFD27B8519C167E56 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746C6E02FBA4E1296FD82D3 /* NotificationService.swift */; };
 		3F63B7754A51EEA7E2C51DC7 /* ExpiryStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861C8B80BBA300B86D11635 /* ExpiryStatus.swift */; };
-		9AAE3CDE13E44B74983ECDE9 /* SampleDataModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0595DD760CD348848208C /* SampleDataModifier.swift */; };
 		42CA2B62A816B5FF6AED6E27 /* ConsumptionLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96039479A358EBD0C18639F6 /* ConsumptionLogTests.swift */; };
 		44C3B9E96A4E262C360999B1 /* FreshKeeperWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE7A5A9245EBF09FAB350A /* FreshKeeperWidgetBundle.swift */; };
 		4FBE4B48A4815EE85A751F44 /* BarcodeProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846256E2B70E8FB73BADEB7D /* BarcodeProduct.swift */; };
 		54D5634F83015EDA64162E6A /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8BF191DEF897952C1E123 /* CameraPreviewView.swift */; };
 		5AA3B2F857B657EFE97254DC /* FoodEmojiMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC072B58442DCF8B4B5A389 /* FoodEmojiMapperTests.swift */; };
 		68C299C0F78848B4EFA2FFD4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61565BD5C7DE577C86CB63B /* SettingsView.swift */; };
+		6E1116ACB44C5D058F22E253 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A13820E203B855048F9534 /* NotificationsView.swift */; };
 		6F6496785DED8BA4F58C290B /* FoodItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB069963725EB09AAD9C85B8 /* FoodItemTests.swift */; };
 		757CE7D173826ED126F9B434 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8844BB4AE2C65A3FDA408419 /* FoodItem.swift */; };
 		85C5224284C1B6B676FB6E13 /* DateParsingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDF4A20BBDB0A6133E24E5 /* DateParsingService.swift */; };
@@ -29,6 +28,7 @@
 		8E397DFC8EEE3E9FB463BC4C /* FreshKeeperWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F0AE21CE340896BCECC4B3DC /* FreshKeeperWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		905EA990E22DD76C06E17348 /* DateParsingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A86B05104339EB0A4B21F /* DateParsingServiceTests.swift */; };
 		94957A58901C80EBB712F7D4 /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC439981562D6FF4441FF592 /* ScanViewModel.swift */; };
+		9AAE3CDE13E44B74983ECDE9 /* SampleDataModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0595DD760CD348848208C /* SampleDataModifier.swift */; };
 		9B24ED19A4AE284F9B5E44B9 /* FreshKeeperWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39915DFF346BB81EFF81EC1C /* FreshKeeperWidget.swift */; };
 		A8305C2A8FC46EAE39E2144D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FC1A41FD9052D9DFFDA0EB /* Assets.xcassets */; };
 		B1FB37FCEB232811FC8F5595 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA6FCC673B60DA740A09FE /* FoodDetailView.swift */; };
@@ -101,13 +101,13 @@
 		4DC30800B69838B4411A7801 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		50CBA84D894BEA7A3C76E45A /* FreshKeeperLockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshKeeperLockScreenWidget.swift; sourceTree = "<group>"; };
 		5861C8B80BBA300B86D11635 /* ExpiryStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiryStatus.swift; sourceTree = "<group>"; };
-		C6C0595DD760CD348848208C /* SampleDataModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataModifier.swift; sourceTree = "<group>"; };
 		5ECE7A5A9245EBF09FAB350A /* FreshKeeperWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshKeeperWidgetBundle.swift; sourceTree = "<group>"; };
 		69C39B77541C7C0EBCDED1BD /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		6ABD661CE7164EEF2301BFFE /* WidgetDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataService.swift; sourceTree = "<group>"; };
 		6BFA6FCC673B60DA740A09FE /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
 		6EBE5765C685468132D5BA3F /* FoodEmojiMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEmojiMapper.swift; sourceTree = "<group>"; };
 		7746C6E02FBA4E1296FD82D3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		7BE474E22F7D1DB40059C7EC /* FreshKeeper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FreshKeeper.entitlements; sourceTree = "<group>"; };
 		846256E2B70E8FB73BADEB7D /* BarcodeProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeProduct.swift; sourceTree = "<group>"; };
 		8844BB4AE2C65A3FDA408419 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		8AE1E49250D591A17786F35C /* FilterChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterChipView.swift; sourceTree = "<group>"; };
@@ -119,6 +119,7 @@
 		B1DA78D3F41CEA87C23EF28D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		C1DDF4A20BBDB0A6133E24E5 /* DateParsingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateParsingService.swift; sourceTree = "<group>"; };
 		C3F8BF191DEF897952C1E123 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		C6C0595DD760CD348848208C /* SampleDataModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataModifier.swift; sourceTree = "<group>"; };
 		CC439981562D6FF4441FF592 /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
 		D3EC8C928186B6C2D8107828 /* FreshKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshKeeperApp.swift; sourceTree = "<group>"; };
 		DE3091EB7B8CFD6EEEB97A72 /* StatisticsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModelTests.swift; sourceTree = "<group>"; };
@@ -126,11 +127,11 @@
 		E2249A1F3150344805371A95 /* SavingsSummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsSummaryCard.swift; sourceTree = "<group>"; };
 		EB069963725EB09AAD9C85B8 /* FoodItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTests.swift; sourceTree = "<group>"; };
 		F0AE21CE340896BCECC4B3DC /* FreshKeeperWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = FreshKeeperWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A13820E203B855048F9534 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		F61565BD5C7DE577C86CB63B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F785AB735C4637EF45DB96DE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		F2A13820E203B855048F9534 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		F87A86B05104339EB0A4B21F /* DateParsingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateParsingServiceTests.swift; sourceTree = "<group>"; };
-		F98F3AAEF703EE0F861B46E7 /* FreshKeeper.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FreshKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98F3AAEF703EE0F861B46E7 /* FreshKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEA47DE9E29D60319E72DCC /* DefaultPriceProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPriceProviderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,6 +252,7 @@
 		A81B9214E6FE9B2AEA6EB750 /* FreshKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				7BE474E22F7D1DB40059C7EC /* FreshKeeper.entitlements */,
 				05951CAC50512FA11D2D6DA6 /* ContentView.swift */,
 				D3EC8C928186B6C2D8107828 /* FreshKeeperApp.swift */,
 				AC8B393D397F8F5E95225C22 /* Models */,
@@ -435,9 +437,6 @@
 						DevelopmentTeam = "";
 						TestTargetID = 114C9040675DEA772498F53D;
 					};
-					114C9040675DEA772498F53D = {
-						DevelopmentTeam = "";
-					};
 					85AF439D27B33082E97E4D78 = {
 						DevelopmentTeam = "";
 					};
@@ -581,20 +580,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_ENTITLEMENTS = FreshKeeper/FreshKeeper.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2LHH59798;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FreshKeeper;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "食品のバーコードと賞味期限をスキャンするためにカメラを使用します";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyojorian.freshkeeper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,9 +608,12 @@
 		78BF0DAC8C5B0C0099CDEC25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = FreshKeeperWidget/FreshKeeperWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2LHH59798;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FreshKeeperWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FreshKeeperWidget;
@@ -617,7 +624,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeper.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyojorian.freshkeeper.Widget;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -634,7 +641,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeperTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyojorian.freshkeeperTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshKeeper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreshKeeper";
@@ -651,7 +658,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeperUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyojorian.freshkeeperUITests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FreshKeeper;
@@ -725,7 +732,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeperTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyojorian.freshkeeperTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshKeeper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreshKeeper";
@@ -806,7 +813,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeperUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyojorian.freshkeeperUITests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FreshKeeper;
@@ -816,9 +823,12 @@
 		D4F155CC48AA2A3A1E98F69A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = FreshKeeperWidget/FreshKeeperWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2LHH59798;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FreshKeeperWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FreshKeeperWidget;
@@ -829,7 +839,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeper.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyojorian.freshkeeper.Widget;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -842,20 +852,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_ENTITLEMENTS = FreshKeeper/FreshKeeper.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2LHH59798;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FreshKeeper;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "食品のバーコードと賞味期限をスキャンするためにカメラを使用します";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.freshkeeper.FreshKeeper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyojorian.freshkeeper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

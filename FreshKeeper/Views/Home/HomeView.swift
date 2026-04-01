@@ -27,11 +27,13 @@ struct HomeView: View {
                     Button { viewModel.showingSettings = true } label: {
                         Image(systemName: "gearshape")
                     }
+                    .accessibilityLabel(String(localized: "settings.title"))
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button { viewModel.showingNotifications = true } label: {
                         Image(systemName: "bell")
                     }
+                    .accessibilityLabel(String(localized: "notifications.title"))
                 }
             }
             .sheet(isPresented: $viewModel.showingSettings) {

@@ -6,8 +6,10 @@ struct SettingsView: View {
     @Environment(\.modelContext) private var modelContext
     @AppStorage("notificationDaysBefore") private var notificationDaysBefore: Int = 3
     @AppStorage("notificationHour") private var notificationHour: Int = 9
+    @AppStorage("iCloudSyncDisabledByUser") private var iCloudSyncDisabled: Bool = false
     @State private var exportFileURL: URL?
     @State private var showShareSheet = false
+    @State private var showRestartAlert = false
 
     private static let feedbackURL = URL(string: "mailto:feedback@freshkeeper.app")
 
@@ -24,6 +26,29 @@ struct SettingsView: View {
                     Picker(String(localized: "settings.notify_time"), selection: $notificationHour) {
                         ForEach(6..<23) { hour in
                             Text("\(hour):00").tag(hour)
+                        }
+                    }
+                }
+
+                Section("iCloud") {
+                    Toggle(
+                        String(localized: "settings.icloud_sync"),
+                        isOn: Binding(
+                            get: { !iCloudSyncDisabled },
+                            set: { newValue in
+                                iCloudSyncDisabled = !newValue
+                                showRestartAlert = true
+                            }
+                        )
+                    )
+
+                    if !iCloudSyncDisabled {
+                        HStack {
+                            Image(systemName: "checkmark.icloud")
+                                .foregroundStyle(.green)
+                            Text(String(localized: "settings.icloud_status_on"))
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
                         }
                     }
                 }
@@ -58,6 +83,11 @@ struct SettingsView: View {
                 if let url = exportFileURL {
                     ShareSheet(activityItems: [url])
                 }
+            }
+            .alert(String(localized: "settings.restart_required"), isPresented: $showRestartAlert) {
+                Button(String(localized: "action.ok")) {}
+            } message: {
+                Text(String(localized: "settings.restart_message"))
             }
         }
     }

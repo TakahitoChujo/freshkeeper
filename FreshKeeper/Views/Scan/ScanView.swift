@@ -74,7 +74,7 @@ struct ScanView: View {
     private var cameraPermissionView: some View {
         VStack(spacing: 12) {
             Image(systemName: "camera.fill")
-                .font(.system(size: 40))
+                .font(.largeTitle)
                 .foregroundStyle(.secondary)
             Text(String(localized: "scan.camera_permission.title"))
                 .font(.headline)
@@ -177,6 +177,7 @@ struct ScanView: View {
                             Image(systemName: "minus.circle")
                                 .font(.title3)
                         }
+                        .accessibilityLabel(String(localized: "accessibility.decrease_quantity"))
                         Text("\(viewModel.quantity)")
                             .font(.title3.bold())
                             .frame(minWidth: 30)
@@ -184,6 +185,7 @@ struct ScanView: View {
                             Image(systemName: "plus.circle")
                                 .font(.title3)
                         }
+                        .accessibilityLabel(String(localized: "accessibility.increase_quantity"))
                     }
                 }
 

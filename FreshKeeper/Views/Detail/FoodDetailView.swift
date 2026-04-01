@@ -7,6 +7,7 @@ struct FoodDetailView: View {
 
     @Bindable var item: FoodItem
     @State private var showingDeleteAlert = false
+    @ScaledMetric(relativeTo: .largeTitle) private var emojiSize: CGFloat = 48
 
     var body: some View {
         NavigationStack {
@@ -14,7 +15,7 @@ struct FoodDetailView: View {
                 Section {
                     HStack {
                         Text(item.displayEmoji)
-                            .font(.system(size: 48))
+                            .font(.system(size: emojiSize))
                         VStack(alignment: .leading) {
                             TextField(String(localized: "detail.name"), text: $item.name)
                                 .font(.title2.bold())
@@ -111,6 +112,7 @@ struct FoodDetailView: View {
                         Image(systemName: "trash")
                             .foregroundStyle(.red)
                     }
+                    .accessibilityLabel(String(localized: "action.delete"))
                 }
             }
             .alert(String(localized: "detail.delete_confirm"), isPresented: $showingDeleteAlert) {

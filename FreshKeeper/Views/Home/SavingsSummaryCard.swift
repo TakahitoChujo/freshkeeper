@@ -15,7 +15,7 @@ struct SavingsSummaryCard: View {
             }
 
             Text("¥\(savings.formatted())")
-                .font(.system(size: 32, weight: .bold, design: .rounded))
+                .font(.system(.largeTitle, design: .rounded, weight: .bold))
 
             if diff != 0 {
                 HStack(spacing: 4) {
@@ -32,5 +32,6 @@ struct SavingsSummaryCard: View {
         .background(.background)
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .shadow(color: .black.opacity(0.05), radius: 4, y: 2)
+        .accessibilityElement(children: .combine)
     }
 }

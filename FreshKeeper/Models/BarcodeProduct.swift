@@ -3,7 +3,7 @@ import SwiftData
 
 @Model
 final class BarcodeProduct {
-    @Attribute(.unique) var barcode: String
+    var barcode: String
     var name: String
     var defaultExpiryDays: Int?
     var category: String?

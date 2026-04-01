@@ -27,6 +27,7 @@ struct StatisticsView: View {
             Button { viewModel.previousMonth() } label: {
                 Image(systemName: "chevron.left")
             }
+            .accessibilityLabel(String(localized: "accessibility.previous_month"))
             Spacer()
             Text(viewModel.selectedMonth.formatted(.dateTime.year().month()))
                 .font(.headline)
@@ -34,6 +35,7 @@ struct StatisticsView: View {
             Button { viewModel.nextMonth() } label: {
                 Image(systemName: "chevron.right")
             }
+            .accessibilityLabel(String(localized: "accessibility.next_month"))
         }
         .padding(.horizontal)
     }
@@ -47,7 +49,7 @@ struct StatisticsView: View {
                 .foregroundStyle(.secondary)
 
             Text("¥\(viewModel.monthlySavings(logs).formatted())")
-                .font(.system(size: 32, weight: .bold, design: .rounded))
+                .font(.system(.largeTitle, design: .rounded, weight: .bold))
 
             Chart(data) { item in
                 BarMark(
