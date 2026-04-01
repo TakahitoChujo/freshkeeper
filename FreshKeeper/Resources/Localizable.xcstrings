@@ -456,6 +456,54 @@
         "ja" : { "stringUnit" : { "state" : "translated", "value" : "賞味期限が過ぎた食品があります。使い切りましたか？" } },
         "en" : { "stringUnit" : { "state" : "translated", "value" : "You have expired food. Did you use it?" } }
       }
+    },
+    "sample.milk" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "牛乳" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Milk" } }
+      }
+    },
+    "sample.yogurt" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ヨーグルト" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Yogurt" } }
+      }
+    },
+    "sample.tofu" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "豆腐" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tofu" } }
+      }
+    },
+    "sample.eggs" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "卵" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Eggs" } }
+      }
+    },
+    "sample.bread" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "食パン" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Bread" } }
+      }
+    },
+    "sample.chicken" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "鶏肉" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Chicken" } }
+      }
+    },
+    "sample.cheese" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "チーズ" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cheese" } }
+      }
+    },
+    "sample.frozen_udon" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "冷凍うどん" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Frozen Udon" } }
+      }
     }
   },
   "version" : "1.0"

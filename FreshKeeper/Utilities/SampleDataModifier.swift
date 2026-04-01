@@ -17,14 +17,14 @@ struct SampleDataModifier: ViewModifier {
         guard !UserDefaults.standard.bool(forKey: "sampleDataInserted") else { return }
 
         let samples: [(String, Int, StorageLocation, Int)] = [
-            ("牛乳",       -2, .refrigerator, 200),
-            ("ヨーグルト",   0, .refrigerator, 150),
-            ("豆腐",        1, .refrigerator, 100),
-            ("卵",          3, .refrigerator, 250),
-            ("食パン",      5, .other,        180),
-            ("鶏肉",        7, .freezer,      350),
-            ("チーズ",      14, .refrigerator, 400),
-            ("冷凍うどん",   30, .freezer,      300),
+            (String(localized: "sample.milk"),          -2, .refrigerator, 200),
+            (String(localized: "sample.yogurt"),          0, .refrigerator, 150),
+            (String(localized: "sample.tofu"),             1, .refrigerator, 100),
+            (String(localized: "sample.eggs"),             3, .refrigerator, 250),
+            (String(localized: "sample.bread"),            5, .other,        180),
+            (String(localized: "sample.chicken"),          7, .freezer,      350),
+            (String(localized: "sample.cheese"),          14, .refrigerator, 400),
+            (String(localized: "sample.frozen_udon"),     30, .freezer,      300),
         ]
 
         for (name, daysOffset, location, price) in samples {
