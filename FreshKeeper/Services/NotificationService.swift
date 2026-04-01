@@ -1,7 +1,7 @@
 import UserNotifications
 import SwiftUI
 
-final class NotificationService: @unchecked Sendable {
+final class NotificationService: Sendable {
     static let shared = NotificationService()
 
     private init() {}

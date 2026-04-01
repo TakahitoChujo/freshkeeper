@@ -28,7 +28,7 @@ final class CameraViewController: UIViewController {
     private let metadataOutput = AVCaptureMetadataOutput()
     private let videoDataOutput = AVCaptureVideoDataOutput()
     private let sessionQueue = DispatchQueue(label: "camera.session")
-    private var _delegateHandler: CameraDelegateHandler?
+    private var delegateHandler: CameraDelegateHandler?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,8 +88,8 @@ final class CameraViewController: UIViewController {
             return
         }
 
-        let delegateHandler = CameraDelegateHandler(controller: self)
-        _delegateHandler = delegateHandler
+        let delegateHandler = CameraDelegateHandler(onBarcodeDetected: onBarcodeDetected, onTextDetected: onTextDetected)
+        self.delegateHandler = delegateHandler
 
         sessionQueue.async { [weak self] in
             guard let self else { return }
@@ -130,29 +130,34 @@ final class CameraViewController: UIViewController {
 // MARK: - Delegate Handler (runs on sessionQueue)
 
 private final class CameraDelegateHandler: NSObject, AVCaptureMetadataOutputObjectsDelegate, AVCaptureVideoDataOutputSampleBufferDelegate, @unchecked Sendable {
-    private weak var controller: CameraViewController?
+    private let onBarcodeDetected: (@Sendable (String) -> Void)?
+    private let onTextDetected: (@Sendable (String) -> Void)?
+    private let lock = NSLock()
     private var lastTextRecognitionTime: Date = .distantPast
     private static let maxOCRTextLength = 1000
 
-    init(controller: CameraViewController) {
-        self.controller = controller
+    init(onBarcodeDetected: (@Sendable (String) -> Void)?, onTextDetected: (@Sendable (String) -> Void)?) {
+        self.onBarcodeDetected = onBarcodeDetected
+        self.onTextDetected = onTextDetected
     }
 
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         guard let metadataObject = metadataObjects.first as? AVMetadataMachineReadableCodeObject,
               let stringValue = metadataObject.stringValue,
               stringValue.count <= 128 else { return }
-        controller?.onBarcodeDetected?(stringValue)
+        onBarcodeDetected?(stringValue)
     }
 
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         let now = Date()
-        guard now.timeIntervalSince(lastTextRecognitionTime) > 0.5 else { return }
+        lock.lock()
+        guard now.timeIntervalSince(lastTextRecognitionTime) > 0.5 else { lock.unlock(); return }
         lastTextRecognitionTime = now
+        lock.unlock()
 
         guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
 
-        let onTextDetected = controller?.onTextDetected
+        let onTextDetected = onTextDetected
         let maxLength = Self.maxOCRTextLength
 
         let request = VNRecognizeTextRequest { request, error in
