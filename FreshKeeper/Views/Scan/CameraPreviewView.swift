@@ -8,11 +8,13 @@ private let logger = Logger(subsystem: "com.freshkeeper", category: "Camera")
 struct CameraPreviewView: UIViewControllerRepresentable {
     let onBarcodeDetected: @Sendable (String) -> Void
     let onTextDetected: @Sendable (String) -> Void
+    var onPermissionDenied: (() -> Void)?
 
     func makeUIViewController(context: Context) -> CameraViewController {
         let controller = CameraViewController()
         controller.onBarcodeDetected = onBarcodeDetected
         controller.onTextDetected = onTextDetected
+        controller.onPermissionDenied = onPermissionDenied
         return controller
     }
 
@@ -22,6 +24,7 @@ struct CameraPreviewView: UIViewControllerRepresentable {
 final class CameraViewController: UIViewController {
     nonisolated(unsafe) var onBarcodeDetected: (@Sendable (String) -> Void)?
     nonisolated(unsafe) var onTextDetected: (@Sendable (String) -> Void)?
+    var onPermissionDenied: (() -> Void)?
 
     private let captureSession = AVCaptureSession()
     private var previewLayer: AVCaptureVideoPreviewLayer?
@@ -63,14 +66,16 @@ final class CameraViewController: UIViewController {
             setupCamera()
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
-                if granted {
-                    DispatchQueue.main.async { self?.setupCamera() }
-                } else {
-                    logger.warning("Camera permission denied by user")
+                DispatchQueue.main.async {
+                    if granted {
+                        self?.setupCamera()
+                    } else {
+                        self?.onPermissionDenied?()
+                    }
                 }
             }
         case .denied, .restricted:
-            logger.warning("Camera permission denied or restricted")
+            onPermissionDenied?()
         @unknown default:
             break
         }

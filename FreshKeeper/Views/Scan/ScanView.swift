@@ -4,6 +4,7 @@ import SwiftData
 struct ScanView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var viewModel = ScanViewModel()
+    @State private var cameraPermissionDenied = false
 
     var body: some View {
         NavigationStack {
@@ -24,17 +25,24 @@ struct ScanView: View {
 
     private var cameraSection: some View {
         ZStack {
-            CameraPreviewView(
-                onBarcodeDetected: { barcode in
-                    viewModel.processBarcodeResult(barcode, context: modelContext)
-                },
-                onTextDetected: { text in
-                    viewModel.processOCRResults(text)
-                }
-            )
-            .frame(height: 300)
-            .clipShape(RoundedRectangle(cornerRadius: 16))
-            .padding()
+            if cameraPermissionDenied {
+                cameraPermissionView
+            } else {
+                CameraPreviewView(
+                    onBarcodeDetected: { barcode in
+                        viewModel.processBarcodeResult(barcode, context: modelContext)
+                    },
+                    onTextDetected: { text in
+                        viewModel.processOCRResults(text)
+                    },
+                    onPermissionDenied: {
+                        cameraPermissionDenied = true
+                    }
+                )
+                .frame(height: 300)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .padding()
+            }
 
             VStack {
                 Spacer()
@@ -61,6 +69,32 @@ struct ScanView: View {
                 .padding(.bottom, 24)
             }
         }
+    }
+
+    private var cameraPermissionView: some View {
+        VStack(spacing: 12) {
+            Image(systemName: "camera.fill")
+                .font(.system(size: 40))
+                .foregroundStyle(.secondary)
+            Text(String(localized: "scan.camera_permission.title"))
+                .font(.headline)
+            Text(String(localized: "scan.camera_permission.message"))
+                .font(.caption)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+            Button(String(localized: "scan.camera_permission.open_settings")) {
+                if let url = URL(string: UIApplication.openSettingsURLString) {
+                    UIApplication.shared.open(url)
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.green)
+        }
+        .frame(height: 300)
+        .frame(maxWidth: .infinity)
+        .background(Color(.systemGray6))
+        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .padding()
     }
 
     private var resultSection: some View {

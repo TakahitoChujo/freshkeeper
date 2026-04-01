@@ -504,6 +504,24 @@
         "ja" : { "stringUnit" : { "state" : "translated", "value" : "冷凍うどん" } },
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Frozen Udon" } }
       }
+    },
+    "scan.camera_permission.title" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "カメラへのアクセスが必要です" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Camera Access Required" } }
+      }
+    },
+    "scan.camera_permission.message" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "バーコードや賞味期限をスキャンするには\nカメラへのアクセスを許可してください" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Please allow camera access\nto scan barcodes and expiry dates" } }
+      }
+    },
+    "scan.camera_permission.open_settings" : {
+      "localizations" : {
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "設定を開く" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Open Settings" } }
+      }
     }
   },
   "version" : "1.0"
