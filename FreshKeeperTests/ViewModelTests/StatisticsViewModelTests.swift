@@ -1,15 +1,25 @@
 import Testing
 import Foundation
+import SwiftData
 @testable import FreshKeeper
 
 @Suite("StatisticsViewModel Tests")
 struct StatisticsViewModelTests {
 
     private func makeLog(action: ConsumptionAction, price: Int, daysAgo: Int) -> ConsumptionLog {
+        let container = try! ModelContainer(for: FoodItem.self, ConsumptionLog.self,
+                                            configurations: ModelConfiguration(isStoredInMemoryOnly: true))
+        let context = ModelContext(container)
         let item = FoodItem(name: "テスト", expiryDate: .now, price: price)
+        context.insert(item)
         let log = ConsumptionLog(foodItem: item, action: action)
+        context.insert(log)
+        // Use the 15th of the current month as a reference point so that
+        // small daysAgo values stay within the current month.
         let calendar = Calendar.current
-        log.date = calendar.date(byAdding: .day, value: -daysAgo, to: .now)!
+        let mid = calendar.date(from: calendar.dateComponents([.year, .month], from: .now))!
+            .addingTimeInterval(14 * 24 * 60 * 60) // 15th of the month
+        log.date = calendar.date(byAdding: .day, value: -daysAgo, to: mid)!
         return log
     }
 
