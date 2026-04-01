@@ -54,7 +54,7 @@ struct SettingsView: View {
                     Button(String(localized: "action.done")) { dismiss() }
                 }
             }
-            .sheet(isPresented: $showShareSheet) {
+            .sheet(isPresented: $showShareSheet, onDismiss: cleanupExportFile) {
                 if let url = exportFileURL {
                     ShareSheet(activityItems: [url])
                 }
@@ -69,15 +69,15 @@ struct SettingsView: View {
         let fetchDescriptor = FetchDescriptor<FoodItem>()
         guard let items = try? modelContext.fetch(fetchDescriptor) else { return }
 
-        var csv = "名前,賞味期限,保管場所,個数,ステータス,価格,登録日\n"
+        var csv = "\"名前\",\"賞味期限\",\"保管場所\",\"個数\",\"ステータス\",\"価格\",\"登録日\"\n"
         for item in items {
-            let name = item.name.replacingOccurrences(of: ",", with: "、")
+            let name = csvSanitize(item.name)
             let expiry = dateFormatter.string(from: item.expiryDate)
-            let storage = item.storageLocation.displayName
+            let storage = csvSanitize(item.storageLocation.displayName)
             let status = item.status.rawValue
             let price = item.price.map(String.init) ?? ""
             let created = dateFormatter.string(from: item.createdAt)
-            csv += "\(name),\(expiry),\(storage),\(item.quantity),\(status),\(price),\(created)\n"
+            csv += "\(name),\"\(expiry)\",\(storage),\"\(item.quantity)\",\"\(status)\",\"\(price)\",\"\(created)\"\n"
         }
 
         let fileName = "FreshKeeper_\(dateFormatter.string(from: .now)).csv"
@@ -89,6 +89,25 @@ struct SettingsView: View {
         } catch {
             // Export failed silently
         }
+    }
+
+    private func cleanupExportFile() {
+        if let url = exportFileURL {
+            try? FileManager.default.removeItem(at: url)
+            exportFileURL = nil
+        }
+    }
+
+    /// Sanitize a string for safe CSV output: escape double quotes and strip leading formula characters.
+    private func csvSanitize(_ value: String) -> String {
+        var sanitized = value
+        // Strip leading characters that trigger formula execution in spreadsheet apps
+        while let first = sanitized.first, "=+\\-@\t\r".contains(first) {
+            sanitized = String(sanitized.dropFirst())
+        }
+        // Escape embedded double quotes and wrap in double quotes
+        sanitized = sanitized.replacingOccurrences(of: "\"", with: "\"\"")
+        return "\"\(sanitized)\""
     }
 }
 

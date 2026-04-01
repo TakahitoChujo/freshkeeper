@@ -146,7 +146,7 @@ struct ScanView: View {
                         Text("\(viewModel.quantity)")
                             .font(.title3.bold())
                             .frame(minWidth: 30)
-                        Button { viewModel.quantity += 1 } label: {
+                        Button { if viewModel.quantity < 99 { viewModel.quantity += 1 } } label: {
                             Image(systemName: "plus.circle")
                                 .font(.title3)
                         }

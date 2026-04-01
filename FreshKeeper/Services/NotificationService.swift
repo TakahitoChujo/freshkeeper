@@ -6,8 +6,12 @@ final class NotificationService: @unchecked Sendable {
 
     private init() {}
 
-    func requestPermission() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { _, _ in }
+    func requestPermission() async -> Bool {
+        do {
+            return try await UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound])
+        } catch {
+            return false
+        }
     }
 
     func scheduleNotifications(for item: FoodItem) {

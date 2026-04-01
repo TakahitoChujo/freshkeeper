@@ -18,6 +18,11 @@ struct FoodDetailView: View {
                         VStack(alignment: .leading) {
                             TextField(String(localized: "detail.name"), text: $item.name)
                                 .font(.title2.bold())
+                                .onChange(of: item.name) {
+                                    if item.name.count > 100 {
+                                        item.name = String(item.name.prefix(100))
+                                    }
+                                }
                         }
                     }
                     .listRowBackground(Color.clear)

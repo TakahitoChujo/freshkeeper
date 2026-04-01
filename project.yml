@@ -17,6 +17,8 @@ targets:
     platform: iOS
     sources:
       - FreshKeeper
+    entitlements:
+      path: FreshKeeper/FreshKeeper.entitlements
     settings:
       base:
         GENERATE_INFOPLIST_FILE: true
@@ -42,6 +44,8 @@ targets:
     platform: iOS
     sources:
       - FreshKeeperWidget
+    entitlements:
+      path: FreshKeeperWidget/FreshKeeperWidget.entitlements
     settings:
       base:
         GENERATE_INFOPLIST_FILE: true
